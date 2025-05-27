@@ -7,7 +7,7 @@ local config = wezterm.config_builder()
 -- This is where you actually apply your config choices
 
 -- Add a color scheme
-config.color_scheme = ' Tangoesque (terminal.sexy)'
+config.color_scheme = 'Solarized Dark Higher Contrast (Gogh)'
 -- disable the ftop tab bar
 config.enable_tab_bar = false
 -- change all the padding to  0

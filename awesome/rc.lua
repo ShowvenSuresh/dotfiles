@@ -17,7 +17,7 @@ local hotkeys_popup = require("awful.hotkeys_popup")
 -- Enable hotkeys help widget for VIM and other apps
 -- when client with a matching name is opened:
 require("awful.hotkeys_popup.keys")
-
+local battery_widget = require("widget.battery.battery-widget.battery")
 -- Load Debian menu entries
 local debian = require("debian.menu")
 local has_fdo, freedesktop = pcall(require, "freedesktop")
@@ -232,12 +232,13 @@ awful.screen.connect_for_each_screen(function(s)
     },
     nil, --     s.mytasklist, -- Middle widget
     {    -- Right widgets
-
+      battery_widget(),
       layout = wibox.layout.fixed.horizontal,
       mykeyboardlayout,
       wibox.widget.systray(),
       mytextclock,
       s.mylayoutbox,
+
     },
   }
 end)

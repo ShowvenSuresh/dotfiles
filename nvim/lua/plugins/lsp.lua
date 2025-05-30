@@ -11,7 +11,8 @@ return {
     vim.lsp.config('*', { capabilities = capabilities })
 
     vim.lsp.enable('gopls')
-    vim.lsp.enable('ccls')
+    --    vim.lsp.enable('ccls')
+    vim.lsp.enable('clangd')
     vim.lsp.enable('lua_ls') -- auto start based on filetype
     --set the diagnostice config
     vim.diagnostic.config({

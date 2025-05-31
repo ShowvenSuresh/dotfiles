@@ -9,7 +9,7 @@ return {
     require("blink.cmp").setup()
     local capabilities = require('blink.cmp').get_lsp_capabilities()
     vim.lsp.config('*', { capabilities = capabilities })
-    --    vim.lsp.enable('jdtls')
+    vim.lsp.enable('jdtls')
     vim.lsp.enable('gopls')
     --    vim.lsp.enable('ccls')
     vim.lsp.enable('clangd')

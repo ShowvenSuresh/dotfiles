@@ -11,6 +11,7 @@ return {
     vim.lsp.config('*', { capabilities = capabilities })
     vim.lsp.enable('jdtls')
     vim.lsp.enable('gopls')
+    vim.lsp.enable('pyright')
     --    vim.lsp.enable('ccls')
     vim.lsp.enable('clangd')
     vim.lsp.enable('lua_ls') -- auto start based on filetype

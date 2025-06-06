@@ -1,1 +1,1 @@
-Will add readme later lorh
+#config folders only 

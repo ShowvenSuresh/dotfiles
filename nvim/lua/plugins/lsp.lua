@@ -19,7 +19,7 @@ return {
     vim.lsp.enable('cssls')
     vim.lsp.enable('jsonls')
     vim.lsp.enable('eslint')
-
+    vim.lsp.enable('ts_ls')
     --set the diagnostice config
     vim.diagnostic.config({
       virtual_text = true,

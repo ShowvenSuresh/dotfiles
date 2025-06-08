@@ -15,6 +15,11 @@ return {
     --    vim.lsp.enable('ccls')
     vim.lsp.enable('clangd')
     vim.lsp.enable('lua_ls') -- auto start based on filetype
+    vim.lsp.enable('html')
+    vim.lsp.enable('cssls')
+    vim.lsp.enable('jsonls')
+    vim.lsp.enable('eslint')
+
     --set the diagnostice config
     vim.diagnostic.config({
       virtual_text = true,

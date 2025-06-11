@@ -1,7 +1,10 @@
 return {
   {
     'saghen/blink.cmp',
-    dependencies = { 'rafamadriz/friendly-snippets' },
+    dependencies = {
+      'rafamadriz/friendly-snippets',
+      'Kaiser-Yang/blink-cmp-git',
+    },
     version = '1.*',
     opts = {
       -- All presets have the following mappings:

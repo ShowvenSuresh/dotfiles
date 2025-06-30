@@ -337,7 +337,10 @@ globalkeys = gears.table.join(
   awful.key({ modkey }, "v", function() awful.spawn("code") end,
     { description = "launch VSCode", group = "applications" }),
   awful.key({ modkey }, "b", function() awful.spawn("brave-browser") end,
-    { description = "Launch Brave-Briwser", group = "applications" }),
+    { description = "Launch Brave-Browser", group = "applications" }),
+  awful.key({ modkey }, "a", function() awful.spawn("spotify") end,
+    { description = "Launch spotify", group = "applications" }),
+
   --volume and brightness
   awful.key({}, "XF86MonBrightnessUp",
     function()

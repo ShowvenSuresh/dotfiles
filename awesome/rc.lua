@@ -338,6 +338,27 @@ globalkeys = gears.table.join(
     { description = "launch VSCode", group = "applications" }),
   awful.key({ modkey }, "b", function() awful.spawn("brave-browser") end,
     { description = "Launch Brave-Briwser", group = "applications" }),
+  --volume and brightness
+  awful.key({}, "XF86MonBrightnessUp",
+    function()
+      os.execute("xbacklight -inc 5")
+    end, { description = "+5", group = "hotkeys" }),
+  awful.key({}, "XF86MonBrightnessDown",
+    function()
+      os.execute("xbacklight -dec 5")
+    end, { description = "-5%", group = "hotkeys" }),
+  awful.key({}, "XF86AudioRaiseVolume",
+    function()
+      os.execute("amixer set Master 5%+")
+    end, { description = "volume up", group = "hotkeys" }),
+  awful.key({}, "XF86AudioLowerVolume",
+    function()
+      os.execute("amixer set Master 5%-")
+    end, { description = "volume down", group = "hotkeys" }),
+  awful.key({}, "XF86AudioMute",
+    function()
+      os.execute("amixer -q set Master toggle")
+    end, { description = "toggle mute", group = "hotkeys" }),
   -- Prompt
   awful.key({ modkey }, "r", function() awful.screen.focused().mypromptbox:run() end,
     { description = "run prompt", group = "launcher" }),

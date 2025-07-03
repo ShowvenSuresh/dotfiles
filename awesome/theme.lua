@@ -98,7 +98,7 @@ theme.titlebar_maximized_button_normal_active   = themes_path .. "default/titleb
 theme.titlebar_maximized_button_focus_active    = themes_path .. "default/titlebar/maximized_focus_active.png"
 
 theme.wallpaper                                 =
-"~/.config/awesome/wallpaper/pix5.png"
+"~/.config/awesome/northern-lights-night-sky-scenery-digital-art-4k-wallpaper-uhdpaper.com-11@2@b.jpg"
 -- You can use your own layout icons like this:
 theme.layout_fairh                              = themes_path .. "default/layouts/fairhw.png"
 theme.layout_fairv                              = themes_path .. "default/layouts/fairvw.png"
